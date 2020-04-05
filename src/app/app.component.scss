@@ -1,0 +1,35 @@
+.title {
+  position: absolute;
+  // width: 92px;
+  height: 32px;
+  left: 20px;
+  top: 36px;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  letter-spacing: 0.06em;
+
+  color: #000000;
+}
+.mat-card {
+  border-radius: 10px;
+  margin: 0 auto 2.3rem;
+}
+.bt-toolbar {
+  /* bg */
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  // left: calc(50% - 375px / 2);
+  bottom: 0px;
+
+  /* White */
+
+  background: #ffffff;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.04);
+}
