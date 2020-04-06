@@ -12,13 +12,14 @@ export class AppComponent {
   constructor(private httpClientService: HttpClientService) {}
 
   ngOnInit() {
-    this.httpClientService
-      .get()
-      .then((res) => {
-        console.log(res);
-        this.items = res;
-      })
-      .catch((error) => console.log(error));
+    // this.httpClientService
+    //   .get()
+    //   .then((res) => {
+    //     console.log(res);
+    //     this.items = res;
+    //   })
+    //   .catch((error) => console.log(error));
+    this.httpClientService.getData().subscribe((items) => (this.items = items));
   }
 
   // public setAuthorization(token: string = null): void {
